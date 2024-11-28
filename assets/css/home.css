@@ -25,7 +25,7 @@ img {
 
 hr {
   opacity: 1 !important;
-  background-color: #E37B4A !important;
+  background-color: #EB5B00 !important;
   height: 1px !important;
 }
 
@@ -50,9 +50,9 @@ section {
 }
 
 .hero-section .content {
-  background: #E37B4A;
+  background: #EB5B00;
   color: #ffffff;
-  height: 36em;
+  height: 30em;
   border-radius: 50px;
 }
 
@@ -74,11 +74,13 @@ section {
 }
 
 .hero-section .text p {
-  font-size: 32px;
+  font-family: Noto Sans;  
+  font-size: 30px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 50px;
   text-align: left;  
-  padding-block: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   padding-inline: 60px;
 }
 
@@ -99,9 +101,10 @@ section {
     line-height: 20px;
   }
   .hero-section .text p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 28px;
     padding-block: 48px;
+    padding-bottom: 20px;
     padding-inline: 12px;
   }
 }
@@ -243,35 +246,37 @@ section {
   align-items: center;
 }
 
-.section-two .content {padding-inline: 60px; padding-bottom: 120px;}
+.section-two .content {padding-inline: 60px; padding-bottom: 60px;}
 
 .section-two .content h1 {
   font-size: 60px;
   font-weight: 600;
   text-align: left; 
-  color: #E37B4A; 
+  color: #EB5B00; 
   margin-bottom: 30px;
 }
 
 .section-two .content p {
-  font-size: 25px;
+  font-family: Noto Sans; 
+  font-size: 30px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 50px;
   text-align: left;  
 }
 
 
 @media (max-width: 991px) {
+  .section-two {padding-top: 40px;}
   .section-two .content {
     padding-inline: 10px;
-    padding-bottom: 48px;
+    padding-bottom: 20px;
   }
   .section-two .content h1 {
     font-size: 36px;
   }
   .section-two .content p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
@@ -287,46 +292,55 @@ section {
   line-height: 70px;
   text-align: center;
   margin-bottom: 0.75em;
-  color: #E37B4A;
+  color: #EB5B00;
 }
 .section-three .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 3em;
+  grid-row-gap: 1em;
   justify-content: center;
 }
 .section-three .item {
   border-radius: 20px;
   padding: 0.8em;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.2s;
 }
+.section-three .item img {
+  display: flex;
+  margin-bottom: 5px;
+}
 .section-three .item h1 {
-  font-size: 34px;
-  color: #E37B4A;
+  font-size: 30px;
+  color: #EB5B00;
   text-align: center;
+  font-family: noto sans;
 }
 .section-three .item p {
-  font-size: 24px;
+  font-size: 21px;
+  font-family: noto sans;
+  width: 75%;
   text-align: center;
 }
 
 @media (max-width: 991px) {
+  .section-three {padding-top: 40px;}
   .section-three .title h1 {font-size: 36px;}
   .section-three .items {grid-template-columns: repeat(1, 1fr);}
   .section-three .item {
-    background: #fff6f2;
-    padding: 1em;
+    background: #fefaf8;
+    padding: 2em 1em;
   }
-  .section-three .item:nth-child(7) {display: none;}
+  .section-three .item img {height: 5em;}
   .section-three .item h1 {font-size: 21px; font-weight: 600;}
   .section-three .item p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
   }
 }
@@ -335,9 +349,12 @@ section {
 /* SECTION - FOUR */
 .section-four {
   padding-top: 70px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
-.section-four .box {
+.section-four h1, .section-four p, .section-four a {
+  font-family: 'noto sans' !important;
+}
+/* .section-four .box {
   background: #FEDA94;
   border-radius: 25px;
   padding: 3em;
@@ -381,31 +398,105 @@ section {
   display: flex;
   margin: auto;
   margin-top: 1.5em;
+} */
+.section-four .parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 75px;
+  grid-row-gap: 0px;
+  margin-inline: 100px;
+  margin-bottom: 5em;
 }
+.section-four .parent .box {
+  border: 4px solid #EB5B00;
+  border-radius: 35px;
+  padding: 3em 1.75em 4em 1.75em;
+  display: grid;
+  gap: 1em;
+  justify-items: center;
+  text-align: center;
+  align-content: space-between;
+}
+.section-four .box h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 44px;
+}
+.section-four .box .h1 {
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+.section-four .box ul {padding: 0;}
+.section-four .box li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-four .box span {
+  font-weight: 800;
+  margin-right: 5px;
+}
+.section-four .button a {
+  background: #EB5B00;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 7.5px 40px;
+  border-radius: 50px;
+}
+.section-four .button {transition: 0.4s;}
+.section-four .button:hover {scale: 1.05;}
 .section-four .content-two,
 .section-four .content-three {
   padding-inline: 60px;
-  padding-top: 60px;
 }
 .section-four .content-two h1,
 .section-four .content-three h1 {
   font-size: 56px;
   font-weight: 600;
   line-height: 100px;
+  margin-bottom: 0.4em;
   text-align: left;  
-  color: #E37B4A;
+  color: #EB5B00;
 }
 .section-four .content-two p,
 .section-four .content-three p {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 35px;  
-  margin-bottom: 3em;
+  line-height: 50px;  
+  margin-bottom: 2em;
 }
 
 @media (max-width: 991px) {
   .section-four {padding-top: 40px; padding-bottom: 60px;}
-  .section-four .box {padding: 1em;}
+  /* .section-four .box {padding: 1em;} */
+  .section-four .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0;
+    grid-row-gap: 1em;
+  }
+  .section-four .parent .box {
+    border: 2.5px solid #EB5B00;
+    border-radius: 35px;
+    padding: 2em 0.75em 2em 0.75em;
+  }
+  .section-four .box h1 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .section-four .box li {
+    font-size: 14px;
+  }
+  .section-four .button a {
+    padding: 10px 40px;
+  }
+  .section-four .box .h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
   .section-four .content {display: grid;}
   .section-four .content h1 {
     width: 100%;
@@ -426,12 +517,12 @@ section {
     margin-bottom: 1em;
   }
   .section-four .content-two,
-  .section-four .content-three {padding-inline: 10px;}
+  .section-four .content-three {padding-inline: 10px; padding-top: 30px;}
   .section-four .content-two h1,
-  .section-four .content-three h1 {font-size: 36px;}
+  .section-four .content-three h1 {font-size: 30px; margin: 0;}
   .section-four .content-two p,
   .section-four .content-three p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
   .section-four .content-three {padding-top: 0;}
